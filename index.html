@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwapStyle - Exchange Your Style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-sync-alt"></i>
+                <span>SwapStyle</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#browse" class="nav-link">Browse</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn-primary" id="join-btn">Join Now</button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Exchange Your Style,
+                    <span class="gradient-text">Transform Your Wardrobe</span>
+                </h1>
+                <p class="hero-description">
+                    Join the sustainable fashion revolution. Upload your pre-loved clothes, discover unique pieces from others, and create a wardrobe that's both stylish and eco-friendly.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" id="start-swapping">Start Swapping</button>
+                    <button class="btn-secondary btn-large" id="learn-more">Learn More</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Happy Swappers</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Items Exchanged</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">95%</span>
+                        <span class="stat-label">Satisfaction Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="clothing-carousel">
+                    <div class="clothing-item active">
+                        <div class="clothing-card">
+                            <div class="clothing-image"></div>
+                            <div class="clothing-info">
+                                <h3>Vintage Denim Jacket</h3>
+                                <p>Perfect condition</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clothing-item">
+                        <div class="clothing-card">
+                            <div class="clothing-image"></div>
+                            <div class="clothing-info">
+                                <h3>Designer Dress</h3>
+                                <p>Like new</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clothing-item">
+                        <div class="clothing-card">
+                            <div class="clothing-image"></div>
+                            <div class="clothing-info">
+                                <h3>Cozy Sweater</h3>
+                                <p>Barely worn</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How SwapStyle Works</h2>
+                <p>Three simple steps to transform your wardrobe sustainably</p>
+            </div>
+            <div class="steps-container">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>1. Upload Your Clothes</h3>
+                        <p>Take beautiful photos of clothes you want to exchange. Add details about size, condition, and style to attract the right swappers.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>2. Browse & Discover</h3>
+                        <p>Explore thousands of unique pieces from other users. Filter by size, style, brand, and location to find your perfect match.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <div class="step-content">
+                        <h3>3. Exchange or Buy</h3>
+                        <p>Connect with other users to arrange exchanges or purchases. Our secure platform ensures safe and fair transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Section -->
+    <section id="browse" class="browse-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Items</h2>
+                <p>Discover amazing pieces from our community</p>
+            </div>
+            <div class="filter-tabs">
+                <button class="filter-tab active" data-filter="all">All Items</button>
+                <button class="filter-tab" data-filter="dresses">Dresses</button>
+                <button class="filter-tab" data-filter="tops">Tops</button>
+                <button class="filter-tab" data-filter="bottoms">Bottoms</button>
+                <button class="filter-tab" data-filter="accessories">Accessories</button>
+            </div>
+            <div class="items-grid" id="items-grid">
+                <div class="item-card" data-category="dresses">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <button class="btn-overlay">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Floral Summer Dress</h3>
+                        <p class="item-user">by Sarah M.</p>
+                        <div class="item-details">
+                            <span class="size">Size M</span>
+                            <span class="condition">Excellent</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-exchange">Exchange</button>
+                            <button class="btn-buy">$45</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card" data-category="tops">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <button class="btn-overlay">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Vintage Band T-Shirt</h3>
+                        <p class="item-user">by Mike R.</p>
+                        <div class="item-details">
+                            <span class="size">Size L</span>
+                            <span class="condition">Good</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-exchange">Exchange</button>
+                            <button class="btn-buy">$25</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card" data-category="bottoms">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <button class="btn-overlay">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>High-Waist Jeans</h3>
+                        <p class="item-user">by Emma L.</p>
+                        <div class="item-details">
+                            <span class="size">Size 28</span>
+                            <span class="condition">Like New</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-exchange">Exchange</button>
+                            <button class="btn-buy">$60</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card" data-category="accessories">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <button class="btn-overlay">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Leather Handbag</h3>
+                        <p class="item-user">by Anna K.</p>
+                        <div class="item-details">
+                            <span class="size">Medium</span>
+                            <span class="condition">Excellent</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-exchange">Exchange</button>
+                            <button class="btn-buy">$80</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card" data-category="dresses">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <button class="btn-overlay">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Evening Gown</h3>
+                        <p class="item-user">by Lisa P.</p>
+                        <div class="item-details">
+                            <span class="size">Size S</span>
+                            <span class="condition">Perfect</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-exchange">Exchange</button>
+                            <button class="btn-buy">$120</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-card" data-category="tops">
+                    <div class="item-image">
+                        <div class="item-overlay">
+                            <button class="btn-overlay">View Details</button>
+                        </div>
+                    </div>
+                    <div class="item-info">
+                        <h3>Silk Blouse</h3>
+                        <p class="item-user">by Rachel T.</p>
+                        <div class="item-details">
+                            <span class="size">Size M</span>
+                            <span class="condition">Excellent</span>
+                        </div>
+                        <div class="item-actions">
+                            <button class="btn-exchange">Exchange</button>
+                            <button class="btn-buy">$55</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="browse-more">
+                <button class="btn-primary" id="browse-all">Browse All Items</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why Choose SwapStyle?</h2>
+                    <p class="about-intro">We're more than just a clothing exchange platform. we're building a community of conscious consumers who believe in sustainable fashion.</p>
+                    <div class="features-list">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Sustainable Fashion</h3>
+                                <p>Reduce textile waste and environmental impact by giving clothes a second life.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Community Driven</h3>
+                                <p>Connect with like-minded fashion enthusiasts who share your style values.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h3>Safe & Secure</h3>
+                                <p>Our platform ensures secure transactions and protects both buyers and sellers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="sustainability-circle">
+                        <div class="circle-content">
+                            <i class="fas fa-recycle"></i>
+                            <span>Circular Fashion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email Us</h3>
+                            <p>hello@swapstyle.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Call Us</h3>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Visit Us</h3>
+                            <p>123 Fashion Street, Style City, SC 12345</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <i class="fas fa-sync-alt"></i>
+                        <span>SwapStyle</span>
+                    </div>
+                    <p>Transforming fashion through sustainable exchanges.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#browse">Browse</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with the latest fashion trends and swaps.</p>
+                    <form class="newsletter-form" id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit" class="btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SwapStyle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
